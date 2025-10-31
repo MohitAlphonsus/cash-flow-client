@@ -1,0 +1,19 @@
+.sidebar {
+  @apply basis-1/4 flex flex-col gap-16 p-8 border-r border-r-gray-100;
+
+  nav {
+    @apply flex flex-col gap-4;
+  }
+
+  a {
+    @apply text-xl p-4 rounded-md hover:bg-gray-100;
+  }
+
+  a.active {
+    @apply bg-gray-100;
+  }
+}
+
+.main {
+  @apply basis-9/12 p-8;
+}
