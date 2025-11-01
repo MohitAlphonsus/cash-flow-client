@@ -1,6 +1,5 @@
 import { Link } from 'react-router';
-import { Logo } from '../UI';
-
+import { Logo, Input } from '../UI';
 
 export default function Signup() {
 	return (
@@ -10,33 +9,25 @@ export default function Signup() {
 				<h2>Start Tracking Smarter</h2>
 
 				<form action="#">
-					<div className="form-group">
-						<label htmlFor="name">Name</label>
-						<input
-							type="text"
-							id="name"
-							name="name"
-							placeholder="Enter your name"
-						/>
-					</div>
-					<div className="form-group">
-						<label htmlFor="name">Email</label>
-						<input
-							type="email"
-							id="email"
-							name="email"
-							placeholder="Enter your email"
-						/>
-					</div>
-					<div className="form-group">
-						<label htmlFor="name">Password</label>
-						<input
-							type="password"
-							id="password"
-							name="password"
-							placeholder="Enter your password"
-						/>
-					</div>
+					<Input
+						label="Name"
+						name="name"
+						type="text"
+						placeholder="Enter your name"
+					/>
+
+					<Input
+						label="Email"
+						name="email"
+						type="email"
+						placeholder="Enter your email"
+					/>
+					<Input
+						label="Password"
+						name="password"
+						type="password"
+						placeholder="Enter your password"
+					/>
 					<button className="btn--primary">Sign Up</button>
 					<p className="text-center text-sm">
 						<span className="opacity-75">Already have an account? </span>
