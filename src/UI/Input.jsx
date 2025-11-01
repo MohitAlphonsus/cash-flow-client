@@ -4,8 +4,8 @@ export default function Input({
 	label,
 	name,
 	type,
-	placeholder = '',
 	value,
+	placeholder = '',
 	onChange,
 }) {
 	return (
